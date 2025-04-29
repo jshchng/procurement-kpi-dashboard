@@ -29,7 +29,9 @@ This dashboard uses a synthetic dataset of anonymized purchase orders from 2022â
    cd procurement-kpi-dashboard
 
 2. Install dependencies:
-    pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 3. Launch dashboard:
-    streamlit run src/dashboard.py
+   ```bash
+   streamlit run src/dashboard.py
