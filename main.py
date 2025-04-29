@@ -15,8 +15,8 @@ def main():
     df = engineer_features(df)
 
     # 3. Save cleaned data
-    df.to_csv("outputs/procurement_kpi_cleaned.csv", index=False)
-    print("Cleaned data saved at outputs/procurement_kpi_cleaned.csv")
+    df.to_csv("data/procurement_kpi_cleaned.csv", index=False)
+    print("Cleaned data saved at data/procurement_kpi_cleaned.csv")
 
     # 4. Analysis
     summary = supplier_performance_summary(df)

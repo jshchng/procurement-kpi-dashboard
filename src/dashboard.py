@@ -19,7 +19,7 @@ def main():
 
     # Load data if it's not in session state
     if 'df' not in st.session_state:
-        file_path = 'outputs/procurement_kpi_cleaned.csv'
+        file_path = 'data/procurement_kpi_cleaned.csv'
         df = load_data(file_path)
         df = clean_data(df)
         df = engineer_features(df)
