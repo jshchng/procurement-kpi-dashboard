@@ -1,4 +1,4 @@
-# src/streamlit_app.py
+# src/dashboard.py
 
 import streamlit as st
 import pandas as pd
