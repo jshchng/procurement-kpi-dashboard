@@ -1,40 +1,47 @@
-# Procurement KPI Dashboard
+# Procurement KPI Dashboard (2022-2024)
 
-An interactive Streamlit dashboard to evaluate procurement performance using real-world KPIs like delivery delays, defect rates, and compliance trends. 
+An interactive Tableau dashboard built to analyze procurement performance across supplier delivery, defect rates, and compliance. Designed for supply chain analysts, operations managers, and data teams to optimize vendor selection, reduce risk, and cut costs.
 
-## ✅ Key Features
+---
 
-- Interactive filters for supplier and order date range  
-- Visualizations of on-time vs. delayed deliveries  
-- Defect and compliance trends across vendors  
-- Real-time, actionable metrics for operations teams  
+![Dashboard Preview](dashboard_preview.png)
 
-## 📊 Dataset Overview
+---
+## Project Overview
 
-Uses a synthetic dataset of ~700 anonymized purchase orders (2022–2023). Data was cleaned and enhanced with feature engineering:
+### ✅ **Key Features**
+
+- **Dynamic Filters**: Slice data by supplier or item category
+- **KPI Metrics**: Total Spend, Avg. Delivery Delay, Defect Rate, Compliance Rate, On-Time Delivery %
+- **Supplier Performance Matrix**: Quadrant chart to assess quality and delivery risks
+- **Pareto Analysis**: Visualizes spend concentration among top vendors (80/20 rule)
+- **Defect Heatmap**: Highlights quality issues by supplier and category
+- **Time Trend**: Tracks monthly spend growth by item category
+
+### 📊 **Dataset Summary**
+
+**Source**: Synthetic dataset of ~700 anonymized purchase orders from Jan 2022 to Jan 2024.
 
 - `Delivery_Delay_Days`: Days between expected and actual delivery  
 - `Defect_Rate`: Defective units as a percentage of total quantity  
 - `Compliance`: Binary flag indicating process adherence  
 
+---
+
+## 🛠️ Tech Stack
+- **Programming Language**: Python
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Tableau Public
+
+---
+
 ## 🔍 Insights
 
-- 30%+ of orders were delivered late, concentrated among a few suppliers  
-- High defect rates strongly correlated with low compliance scores  
-- A small group of vendors consistently delivered on time with no defects  
-- The dashboard highlights underperforming suppliers and areas to improve compliance
+- Only **11.3%** of orders were delivered on time — major delivery inefficiencies  
+- **5.78% average defect rate**, with specific suppliers exceeding **13%**  
+- Top 3 vendors account for **80% of total spend**, revealing heavy concentration risk  
+- Suppliers with **low compliance** consistently showed higher defect and delay rates
 
-## 🚀 How to Run
+## 📍 Tableau Dashboard
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/jshchng/procurement-kpi-dashboard.git
-   cd procurement-kpi-dashboard
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-
-3. Launch dashboard:
-   ```bash
-   streamlit run src/dashboard.py
+👉 **Live Dashboard**: [View on Tableau Public](https://public.tableau.com/views/procurementdashboard_17476876103340/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  

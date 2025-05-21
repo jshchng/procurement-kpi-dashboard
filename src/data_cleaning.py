@@ -13,6 +13,7 @@ def clean_data(df):
     df['Delivery_Date'] = pd.to_datetime(df['Delivery_Date'], errors='coerce')
     
     df['Defective_Units'] = df['Defective_Units'].fillna(0)
+    df['Supplier'] = df['Supplier'].str.replace('_', ' ')
     
     numeric_cols = ['Quantity', 'Unit_Price', 'Negotiated_Price', 'Defective_Units']
     df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric, errors='coerce')
